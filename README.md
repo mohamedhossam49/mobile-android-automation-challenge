@@ -7,12 +7,12 @@
   
   3) Open the repository in Android Studio and build the application. You can choose to build it on a physical device or an emulator.
 
-### Tests can be run from app/src/androidTest/tests directory 
-
-### Tests
+### Automated Tests
 1) Login Tests: verify that the user can login successfully
 2) Search Tests: verify user can search for an item by keyword
 3) Image Tests: verify user can view an image for a speciic item
+
+- Tests can be run from app/src/androidTest/tests directory 
 
 ### Test Design & Structure
 - Actual Tests are located in app/src/androidTest/tests
