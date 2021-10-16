@@ -16,10 +16,8 @@ class SearchPage {
 
     fun searchForAnItemByKeyword () {
         onView(searchInputField)
-            .check(matches(isDisplayed()))
             .perform(typeText(keyword))
         closeSoftKeyboard()
-        Thread.sleep(1000)
         onView(searchBtn)
             .check(matches(isDisplayed()))
             .perform(click())
