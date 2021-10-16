@@ -14,7 +14,7 @@
 
 - Tests can be run from app/src/androidTest/tests directory 
 
-### Test Design & Structure
+### Test Structure
 - Actual Tests are located in app/src/androidTest/tests
 - Test functions are located in app/src/androidTest/pages 
 - Element locators are located app/src/androidTest/locators
