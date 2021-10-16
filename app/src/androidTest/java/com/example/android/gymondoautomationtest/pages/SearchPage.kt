@@ -15,7 +15,7 @@ import kotlinx.android.synthetic.main.layout_item.view.*
 
 class SearchPage {
 
-    fun searchForAnItemById () {
+    fun searchForAnItemByKeyword () {
         onView(searchInputField)
             .check(matches(isDisplayed()))
             .perform(typeText(keyword))

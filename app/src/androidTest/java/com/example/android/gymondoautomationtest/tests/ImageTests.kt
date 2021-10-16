@@ -10,7 +10,7 @@ class ImageTests : BaseTests() {
     @Test
     fun testUserCanViewItemImage(){
         loginPage.login()
-        searchPage.searchForAnItemById()
+        searchPage.searchForAnItemByKeyword()
         searchPage.openImageView()
         imagePage.verifyImageIsDisplayed()
     }

@@ -10,7 +10,7 @@ class SearchTests : BaseTests () {
     @Test
     fun testUserCanSearchByItemId() {
         loginPage.login()
-        searchPage.searchForAnItemById()
+        searchPage.searchForAnItemByKeyword()
         searchPage.verifyItemIsDisplayed()
     }
 }
