@@ -11,7 +11,6 @@ import com.example.android.gymondoautomationtest.locators.SearchPage.recyclerVie
 import androidx.test.espresso.contrib.RecyclerViewActions.actionOnItemAtPosition
 import com.example.android.gymondoautomationtest.model.itemName
 import com.example.android.gymondoautomationtest.model.keyword
-import kotlinx.android.synthetic.main.layout_item.view.*
 
 class SearchPage {
 
@@ -20,6 +19,7 @@ class SearchPage {
             .check(matches(isDisplayed()))
             .perform(typeText(keyword))
         closeSoftKeyboard()
+        Thread.sleep(1000)
         onView(searchBtn)
             .check(matches(isDisplayed()))
             .perform(click())
