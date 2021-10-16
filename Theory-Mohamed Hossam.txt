@@ -1,0 +1,20 @@
+● Why did you choose the framework you used? 
+Since we are trying to test a native mobile automation on the UI level, it was better to use native automation frameworks too such as Espresso & XCUITest. In this case, I chose to use Espresso, because I had to finish the task on my local Windows OS machine.
+
+● What were the advantages and disadvantages of your choice?
+The advantages of using Espresso are:
+1) It uses the same application programming language to build the test framework
+2) Easy to setup and integrate with CI environment  
+3) Can easily add IDs for elements with no IDs (best element locator) to avoid poor element locators selection
+4) Low test flakiness rate due to UI thread synchronization which avoids timing issues
+5) Faster test execution time compared to other frameworks (ex: Appium)
+
+The disadvantages of using Espresso are:
+1) It is limited to Android UI testing 
+2) You need to have access to application code
+ 
+● Which good coding practices did you follow when writing your tests?
+The objective was to keep a single responsibility behaviour for each layer. I chose to use the good practices of POM (Page Object Model) and SOLID design principles, while trying to separate between the actual test functions, page classes as well as elements locating strategies to make sure code is maintainable and configurable. I also created a separate data file to make sure test data can be easily updated and maintained. Moreover, I tried to make use of some OOP concepts including abstraction, encapsulation and inheritance to avoid code complexity and repetition. I followed the same structure all over the project including camelCase naming convention, and descriptive functions to make sure the code is understandable by other developers and even business stakeholders.
+
+● How do you make sure your code is maintainable by other team members? 
+The objective was to keep a single responsibility behaviour for each layer. I chose to use the good practices of POM (Page Object Model) and SOLID design principles, while trying to separate between the test classes, page classes as well as elements locators. I also created a separate data file to make sure test data can be easily updated and maintained. Moreover, I made use of some OOP concepts including abstraction, encapsulation, and inheritance to avoid code complexity and repetition. I followed the same structure all over the project including camelCase naming convention, descriptive and non-complex functions. By this was, I ensure the code can be maintained and understandable by other team members, and even business stakeholders. Lastly, I would like to mention that there are different approaches to apply the concept of clean code, and I am totally open to discuss different test design approaches.
